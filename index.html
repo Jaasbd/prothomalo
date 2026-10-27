@@ -45,33 +45,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
   display: block;
 }
 
-.adwide {
-  width: 100%;
-  max-width: 1450px;
-  height: 133px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.adwide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-}
-
-@media (max-width: 768px) {
-  .adwide {
-    height: auto;
-    min-height: 90px;
-  }
-
-  .adwide img {
-    height: auto;
-  }
-}
-
 /* nav */
 .nav{border-bottom:2px solid var(--line);border-top:1px solid var(--line);background:var(--bg)}
 .nav .wrap{display:flex;justify-content:space-between;align-items:stretch}
@@ -238,17 +211,9 @@ aside .adl{text-align:center;font-size:13px;color:var(--mute);margin-bottom:6px}
   <a href="#"><span class="quick-icon">▷</span> ভিডিও</a>
   <a href="#"><span class="quick-icon">▣</span> ছবি</a>
 </div>
-<div class="adwide">
-  <a href="https://example.com/" target="_blank">
-    <img src="https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/17597287128595141983/728x90_4.png" alt="Advertisement">
-  </a>
-</div>
-
+<div class="adwide" aria-hidden="true"></div>
 <div class="divider"></div>
-
 <main class="wrap layout">
-  <!-- তোমার কনটেন্ট -->
-</main>
   <article>
     <a class="cat" href="#">প্রযুক্তি</a>
     <h1>সবচেয়ে বিশ্বস্ত অনলাইন আয়ের ওয়েবসাইট</h1>
